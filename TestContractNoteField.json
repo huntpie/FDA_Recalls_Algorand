@@ -1,0 +1,16 @@
+{
+  "txns": [
+    {
+      "type": "pay",
+      "params": {
+        "from": "RU54FQ7R6KI4TB6ZVJ6DX3OOUWKYG5S7OLAVFFCZCFPI334ZYYNQ7JWKMM",
+        "to": "WO4B3Z5M2NJOHCNAGVO6MAJ3KQFWHEBM5RY53ZTIAC2WSK5SJHP5LNYZQA",
+        "amount": "100000"
+      },
+      "note": "[80,70,60,50,40,30,20,10]",
+      "signers": [
+        "RU54FQ7R6KI4TB6ZVJ6DX3OOUWKYG5S7OLAVFFCZCFPI334ZYYNQ7JWKMM"
+      ]
+    }
+  ]
+}
