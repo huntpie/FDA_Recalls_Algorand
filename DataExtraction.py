@@ -2,15 +2,16 @@ import requests
 import json
 import csv
 
-url = "https://api.fda.gov/drug/event.json?limit=1"
+url = "https://api.fda.gov/food/enforcement.json?search=report_date:[20201201+TO+20201202]&limit=100"
 
 response = requests.get(url)
 
 data = response.text
 
 parsed = json.loads(data)
-brand_name = parsed["results"][0]["patient"]["drug"][3]["openfda"]["brand_name"][0]
+results_country = parsed["results"][0]["country"]
+results_city = parsed["results"][0]["city"]
 
 
-with open('output2.csv', 'w+') as f:
-    f.write("Brand Name: " + brand_name)
+with open('FDA20201201to20201202.csv', 'w+') as f:
+    f.write("Country: " + results_country + ", City: " + results_city)
