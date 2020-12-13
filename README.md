@@ -1,22 +1,18 @@
 # FDA_Recalls_Algorand
 
-Python script to pull OpenFDA Data for Food_Recalls for December 1st.
+Python script to pull OpenFDA Data for Food_Recalls from Dec 1st to Dec 2nd 2020
 
-Break results JSON data in half to fit in 1KB of Algo notefield
+- Parse metadata number to see how many results the APi does
+- Break results JSON data in half to fit in 1KB of Algo notefield
+- Label first half of data with - Label second half of data
 
-Label first half of data
+Use python sdk and a new python script to make a pay transaction contract
 
-Use python sdk to encode data into txn
+-Place DataExtraction first json_results variable into notefield
 
-Label second half of data
+Use python sdk for indexer
 
-Encode JSON into uint8 array (if this is possible?)
-
-Place Encoded uint8 array into txn note of TEAL program
-
-Send a payment txn to receiver address
-
-Use indexer from Algorand to find all transactions with "FDA Food Recalls" string in notefield
+-Use indexer to search for prefix
 
 Future implementations
 
