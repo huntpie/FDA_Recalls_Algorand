@@ -2,7 +2,7 @@ import base64
 import json
 import time
 
-import DataExtraction
+import OpenFDA_food_json_results
 from algosdk import algod, mnemonic, transaction
 
 
@@ -32,7 +32,7 @@ def send_note():
     print("My address: {}".format(my_address))
 
     params = algod_client.suggested_params()
-    note = DataExtraction.results_json_1.encode()
+    note = OpenFDA_food_json_results.results_json_1.encode()
     receiver = "GD64YIY3TWGDMCNPP553DZPPR6LDUSFQOIJVFDPPXWEG3FVOJCCDBBHU5A"
 
     data = {

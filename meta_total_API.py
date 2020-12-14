@@ -1,7 +1,6 @@
 import requests
 import json
 
-
 urlLimitNumber = "5"
 url = "https://api.fda.gov/food/enforcement.json?search=report_date:[20201201+TO+20201202]&limit=" + urlLimitNumber
 
