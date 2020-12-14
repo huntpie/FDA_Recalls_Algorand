@@ -28,6 +28,14 @@ for y in range(1, int(meta_total_API.meta_total_json)):
         y)] = parsed["results"][y]
 
 # add string prefix of "FDAF" to represent FDA Food Recalls
+
+# NEED HELP HERE
+#jsondata = []
+# for q in range(1, int(meta_total_API.meta_total_json)):
+    # jsondata["results_json_{}".format(
+    # q) = json.dumps(rde["results_dict_{}".format(q)])]
+
+# Dont want this, prefer above
 results_json_1 = json.dumps(rde["results_dict_1"])
 
 

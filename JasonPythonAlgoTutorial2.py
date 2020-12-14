@@ -68,7 +68,7 @@ def send_note():
         confirmed_txn.get('noteb64')).decode()))
     person_dict = json.loads(base64.b64decode(
         confirmed_txn.get('noteb64')).decode())
-    # print(person_dict['firstName'])
+    print(person_dict['firstName'])
 
 
 send_note()
